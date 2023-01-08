@@ -1,11 +1,3 @@
-#spør om navn på bruker og lode brukerdata
-#spør hvor mye de skal bete
-#wist spiller får over 21 taper de
-#når de sier nei spiller dealeren til han har høyere en spilleren eller til han går bust
-#del ut pengene etter hvem som winner og spør om de vil spille igjen
-#vist ja gjenta vist nei lagre data og avslutt
-
-
 from random import randint
 from time import sleep
 import os
@@ -84,7 +76,7 @@ def dealerdraw():
     global money
     while True:
         dealer.add(cards)
-        print("dealer total is",dealer.total)
+        print("dealer total is ",dealer.total)
         sleep(1)
         print('.')
         sleep(1)
@@ -109,7 +101,7 @@ if username+".txt" in files:
     money=int(lines[1])
     print("Welcome back "+username+"\ntotal money:"+str(money))
 else:
-    print("Welcome"+username+"enjoy your stay, you start white"+str(money)+"money")
+    print("Welcome "+username+" enjoy your stay, you start white "+str(money)+"money")
 
 def setbet():
     while True:
